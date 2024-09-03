@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Deals E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <div class="navbar">
+      <h1 class="title-navbar" style="padding:0px 20px;">FASHIONDEALS</h1>
+      <div class="navbar-lists">
+        <p><a href="index.html" class="navbaritems">home</a></p>
+        <p><a href="collection.html" class="navbaritems">products</a></p>
+        <p><a href="" class="navbaritems">orders</a></p>
+        <p><a href="" class="navbaritems">about</a></p>
+      </div>
+      <div class="navbar-toggle" onclick="opensidebar()">
+        <i class="fa-solid fa-bars-staggered">MENU </i>
+      </div>
+    </div>
+
+    <!-- sidenavbar -->
+
+    <div class="sidenavbar">
+      <div class="sidebar-toggle" onclick="closesidebar()">
+        <i class="fa-solid fa-xmark">x</i>
+      </div>
+      <div class="sidebar-lists">
+        <p class="sidebarcontainer">
+          <a href="index.html" class="sidebaritems">home</a>
+          <a href="collection.html" class="sidebaritems">products</a>
+          <a href="" class="sidebaritems">orders</a>
+          <a href="" class="sidebaritems">about</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- products -->
+
+    <div class="products">
+        <form>
+            <input type="text" placeholder="search" id="products-search">
+            <i id="i-search"">search</i>
+        </form>
+        
+        <div class="product-container" id="product">
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0002.jpg" alt="" style="height: 200px;">
+            <p>orange dress</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0004.jpg" alt="" style="height: 200px;">
+            <p>yellow dress</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0006.jpg" alt="" style="height: 200px;">
+            <p>grey dress</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0005.jpg" alt="" style="height: 200px;">
+            <p>white bikni</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0007.jpg" alt="" style="height: 200px;">
+            <p>fashion dress</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0003.jpg" alt="" style="height: 200px;">
+            <p>skirt</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/WhatsApp Image 2024-07-31 at 10.02.51_ec0f5e2d.jpg" alt="" style="height: 200px;">
+            <p>denim shirts</p>
+        </div>
+
+        <div class="product-box">
+            <img src="images/IMG-20240731-WA0002.jpg" alt="" style="height: 200px;">
+            <p>orange dress</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-container">
+        <h2>FASHIONDEALS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat </p>
+        <div class="footer-logo">
+        <i>T</i>
+        <i>F</i>
+        <i>I</i>
+      </div>
+      </div>
+      <p>@2024 FashionDeals.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

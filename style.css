@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px  10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  user-select: none;
+}
+.navbar-lists {
+  display: flex;
+  column-gap: 10px;
+}
+.navbar-lists a {
+  text-decoration: none;
+  color: #1d232c;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar-lists a:hover {
+  color: #1d232c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+/* sidenav */
+.sidenavbar {
+  width: 30%;
+  background-color: #1d232c;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  color: antiquewhite;
+  padding: 20px;
+  transition: 1s;
+  left: -40%;
+}
+.sidebar-toggle {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  text-align: right;
+  user-select: none;
+  cursor: pointer;
+}
+.sidebar-lists {
+  margin-bottom: 30px;
+}
+.sidebaritems {
+  color: antiquewhite;
+  text-decoration: none;
+  display: flex;
+}
+.sidebarcontainer a {
+  padding: 10px;
+  text-transform: uppercase;
+}
+.sidebarcontainer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* header */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.header-image{
+  height: 500px;
+  width: 450px;
+  border-radius: 5px;
+}
+.header-button{
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1d232c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* service */
+.service{
+  padding: 20px;
+}
+.service-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.service-container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.service-container2 div{
+  background-color: #f2f4f7;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* new arrival */
+
+.new-arrival{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px
+}
+.new-arrival-container{
+  position: relative;
+  flex-basis: 20%; 
+  padding: 20px;
+}
+.new-arrival-button{
+  padding: 10px 20px;
+  position:absolute;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  top: 65%;
+  left: 18%;
+  border-radius: 20px;
+  border: none;
+  background-color: #1d232c;
+  color: white;
+  cursor: pointer;
+}
+img{
+  border-radius: 5px;
+}
+
+/* news */
+
+.news{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.news-input{
+  width: 80vw;
+  border: solid 2px black ;
+  padding:10px 5px;
+  border-radius: 5px;
+  outline: none;
+}
+.news-button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  background-color: #1d232c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* footer */
+
+.footer{
+  background-color: #1d232c;
+  color: #fff;
+  padding: 20px;
+}
+
+/* products */
+
+.products{
+  padding: 20px;
+
+}
+form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#products-search{
+  width: 70%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border:#1d232c solid 2px;
+  background-color: #fff;
+  color:#1d232c;
+  margin: 20px;
+}
+#i-search{
+  background-color: #1d232c;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.product-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+.product-box{
+  padding: 20px;
+  flex-basis: 20%;
+
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-lists {
+    display: none;
+    column-gap: 10px;
+  }
+  .header-image{
+    display: none;
+  }
+  .service-container{
+    display: none;
+  }
+  .service-container2{
+    flex-direction: column;
+  }
+}
